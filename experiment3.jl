@@ -58,14 +58,6 @@ function magnetic_field_plot(dt, total_t)
 
     V_projectile = π * pellet_radius^3 * 4 / 3
 
-    _xt = Float64[]
-    _vt = Float64[]
-    _Bt = Float64[]
-    _t = Float64[]
-    _at = Float64[]
-    _ft = Float64[]
-    _grad = Float64[]
-
     for t in 0:dt:total_t
         I = current(t, R, L, C, V0)
         term1 = (x - coil_length/2) / sqrt(coil_radius^2 + (x - coil_length/2)^2)
