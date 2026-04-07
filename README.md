@@ -76,7 +76,9 @@ classDiagram
     Pellet *-- PelletCharacteristics
 ```
 
-The loop() function advances the simulation using a timestep.
+
+
+The Arduino setup() function sets values for the experiment and each of the subclasses/structs. The Arduino loop() function advances the simulation using a timestep.
 
 At each iteration:
 1. the program waits until the next timestep is reached,
@@ -87,7 +89,7 @@ At each iteration:
 
 ```mermaid
 flowchart LR
-    A[loop()] --> B{dt?}
+    A[loop] --> B{dt?}
     B -- No --> A
     B -- Yes --> C{running?}
     C -- No --> A
