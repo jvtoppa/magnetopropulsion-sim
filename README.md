@@ -109,17 +109,17 @@ Feel free to use, modify, etc. :)
 
 # Project Roadmap
 
-- [ ] *Refine the theoretical model*
-      
-  **What:** Estimate realistic values for inductance, capacitance, and resistance.  
-  **Why:** The simulation depends strongly on accurate electrical parameters, so reasonable first estimates are needed before experimental validation.  
-  **How:** Use the resonance relation $\omega_0 = 1/\sqrt{LC}$ to estimate inductance, and test different capacitor and resistor values to match the expected system behavior.
-
 - [x] *Build the experimental setup*  
   
   **What:** Assemble the physical coilgun prototype and supporting hardware.  
   **Why:** Building the apparatus early helps reveal practical constraints and implementation issues that are not obvious in the theoretical design.  
   **How:** Assemble the setup during class hours, 3D print the mechanical support structure after hours, wind and count the coil turns, and integrate the solenoid into the system.
+
+- [ ] *Refine the theoretical model*
+      
+  **What:** Estimate realistic values for inductance, capacitance, and resistance.  
+  **Why:** The simulation depends strongly on accurate electrical parameters, so reasonable first estimates are needed before experimental validation.  
+  **How:** Use the resonance relation $\omega_0 = 1/\sqrt{LC}$ to estimate inductance, and test different capacitor and resistor values to match the expected system behavior.
 
 - [ ] *Perform calibration and preliminary tests* 
   
