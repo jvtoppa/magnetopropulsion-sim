@@ -85,7 +85,7 @@ At each iteration:
 4. and stops when the pellet exits the coil or the time limit is reached.
 
 
-```{mermaid}
+```mermaid
 flowchart LR
     A[loop()] --> B{dt?}
     B -- No --> A
