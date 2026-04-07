@@ -21,6 +21,7 @@ I also made available a C++ version of the simulation to run it on embedded syst
 ```mermaid
 classDiagram
     class Experiment {
+        +time
         +step(dt)
         +get_current()
         +is_pellet_in_coil()
@@ -40,6 +41,10 @@ classDiagram
     }
 
     class Circuit {
+        +R
+        +L
+        +C
+        +V0
         +set_R(r)
         +set_L(l)
         +set_C(c)
@@ -54,7 +59,7 @@ classDiagram
         +x
         +v
         +a
-        +force
+        +F
         +update(dt, force)
         +get_x()
         +get_v()
